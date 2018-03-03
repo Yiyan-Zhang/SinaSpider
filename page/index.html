@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="group work of weibo spider">
+    <meta name="author" content="human">
+
+    <title>A-PRESENTING-PAGE</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    
+    
+    <!-- Animate CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.transitions.css" >
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/material.css">
+    
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    
+    
+
+
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/color/blue.css" title="blue">
+    
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- Modernizer js -->
+    <script src="assets/js/modernizr.custom.js"></script>
+
+
+<!--     <script type="text/javascript"> 
+        function setsubmit() {
+            if(mylink.value == 0) 
+            window.location='http://www.baidu.com'; 
+            if(mylink.value == 1) 
+            window.location='http://www.w3cschool.cn'; 
+            if(mylink.value == 2) 
+            window.location='http://www.w3cschool.cn'; 
+            if(mylink.value == 3) 
+            if(mylink.value == 4)
+            if(mylink.value == 5)  
+        } 
+    </script>  -->
+
+
+</head>
+
+<body class="index">
+    
+    <!-- Start Off=Canvas Navigation Section -->
+    <div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list"><a href="#about-us" class="page-scroll waves-effect"><i class="fa fa-fw fa-user"></i><span>事项说明</span></a>
+                <a href="#accordion" class="page-scroll waves-effect"><i class="fa fa-fw fa-bar-chart-o"></i><span>开始检索</span></a>
+				<a href="#analysis" class="page-scroll waves-effect"><i class="fa fa-fw fa-comment-o"></i><span>热点分析</span></a>
+			</div>
+		</nav>
+		<button class="close-button" id="close-button">Close Menu</button>
+	</div>
+	<button class="menu-button waves-effect" id="open-button">Open Menu</button>
+    <!-- End Off-Canvas Navigation Section -->
+    
+    
+    <!-- ***************************************************************** -->
+    <!-- Start Header Section -->
+    <!-- ***************************************************************** -->
+    <section class="header" id="home">
+        <div class="container">
+            <div class="intro-text">
+                <h1><span class="icon-list"><a href="#home" class="logo page-scroll waves-effect"></a></span>微博热点检索<span></span></h1>
+                <p>WEIBO HOTSPOT SEARCHING</br> </p>
+                <div class="col-lg-12 text-center">
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-primary waves-effect"><a href="#accordion" class="page-scroll">开始检索</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header Section -->
+    
+    
+    
+    
+    <!-- Start About Us Section -->
+    <section id="about-us" class="about-us-section-1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title text-center">
+                        <h2>事項說明</h2>
+                        <p>近期微博热搜榜的信息检索：<br><h3>>>><br> 40条 <strong>微博热搜</strong> ， 热点的舆情检索 <br> 简易版的微博热点舆情分析<br>>>></h3></p>
+                    </div>
+                </div>
+                
+                 <!-- Start Fun Facts Section -->
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="counter-item waves-effect">
+                        <i class="fa fa-cloud-upload"></i>
+                        <div class="timer" id="item1" data-to="40" data-speed="2000"></div>
+                        <h5>热点</h5><h5>hotspots</h5>                               
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="counter-item waves-effect">
+                        <i class="fa fa-check"></i>
+                        <div class="timer" id="item2" data-to="24833" data-speed="2000"></div>
+                        <h5>评论</h5><h5>comments</h5>                           
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="counter-item waves-effect">
+                        <i class="fa fa-code"></i>
+                        <div class="timer" id="item3" data-to="400" data-speed="1500"></div>
+                        <h5>爬虫代码</h5><h5>core codes</h5>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="counter-item waves-effect">
+                        <i class="fa fa-male"></i>
+                        <div class="timer" id="item4" data-to="2" data-speed="1000"></div>
+                        <h5>人</h5><h5>human</h5>                               
+                    </div>
+                </div>
+                <!-- End Fun Facts Section -->  
+
+            </div><!-- /.row -->            
+            
+        </div><!-- /.container -->
+    </section>
+    <!-- End About Us Section -->
+    
+    
+    <!-- Start About Us Section 2 -->
+    <div class="about-us-section-2">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-8">
+                    <ul id="skill-section" class="clearfix skill-graph waves-effect">
+
+                        <!-- single skill -->
+                        <li>
+                            <div class="after-li">
+                                <div class="singel-hr">
+                                    <div class="singel-hr-inner waves-effect" data-height="85%"></div>
+                                    <div class="skill-visiable">
+                                        <span class="skill-count">37</span>
+                                    </div>
+                                    <span class="skill-title">哈哈哈</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /single skill-->
+
+                        <!-- single skill -->
+                        <li>
+                            <div class="after-li">
+                                <div class="singel-hr">
+                                    <div class="singel-hr-inner waves-effect" data-height="65%"></div>
+                                    <div class="skill-visiable">
+                                        <span class="skill-count">17</span>
+                                    </div>
+                                    <span class="skill-title">干净</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /single skill-->
+
+                        <!-- single skill -->
+                        <li>
+                            <div class="after-li">
+                                <div class="singel-hr">
+                                    <div class="singel-hr-inner waves-effect" data-height="50%"></div>
+                                    <div class="skill-visiable">
+                                        <span class="skill-count">9</span>
+                                    </div>
+                                    <span class="skill-title">卫生</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /single skill-->
+
+                        <!-- single skill -->
+                        <li>
+                            <div class="after-li">
+                                <div class="singel-hr">
+                                    <div class="singel-hr-inner waves-effect" data-height="55%"></div>
+                                    <div class="skill-visiable">
+                                        <span class="skill-count">12</span>
+                                    </div>
+                                    <span class="skill-title">灰尘</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /single skill-->
+
+                        <!-- single skill -->
+                        <li>
+                            <div class="after-li">
+                                <div class="singel-hr">
+                                    <div class="singel-hr-inner waves-effect" data-height="58%"></div>
+                                    <div class="skill-visiable">
+                                        <span class="skill-count">14</span>
+                                    </div>
+                                    <span class="skill-title">农村</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /single skill-->
+
+                        <!-- single skill -->
+                        <li>
+                            <div class="after-li">
+                                <div class="singel-hr">
+                                    <div class="singel-hr-inner waves-effect" data-height="52%"></div>
+                                    <div class="skill-visiable">
+                                        <span class="skill-count">10</span>
+                                    </div>
+                                    <span class="skill-title">北方</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /single skill-->
+
+                        <!-- single skill -->
+                        <li>
+                            <div class="after-li">
+                                <div class="singel-hr">
+                                    <div class="singel-hr-inner waves-effect" data-height="50%"></div>
+                                    <div class="skill-visiable">
+                                        <span class="skill-count">9</span>
+                                    </div>
+                                    <span class="skill-title">南方</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- /single skill-->
+
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="custom-accordion waves-effect">
+                        <!-- Start Accordion Section -->
+                    <div class="panel-group" id="accordion">
+
+                        <!-- Start Accordion 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading waves-effect">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1">内容检索
+                                        <i class="fa fa-angle-left control-icon"></i> 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse-1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <select>
+                                        <!-- <option value="">----</option> -->
+                                        <option value ="0">东北晒饺子</option>
+                                        <option value ="1">韩国大火</option>
+                                        <option value="2">张艺兴</option>
+                                        <option value="3">王思聪</option>
+                                    </select>
+                                </div>                               
+                            </div>
+                        </div>
+                        <!-- End Accordion 1 -->
+
+                        <!-- Start Accordion 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading waves-effect">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" class="collapsed">
+                                        <i class="fa fa-angle-left control-icon"></i>时间检索
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse-2" class="panel-collapse collapse">
+                                <select>
+                                    <option value="">----</option>
+                                    <option value ="4">2017.12.20</option>
+                                    <option value="5">2017.12.22</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- End Accordion 2 -->
+
+                        <!-- Start Accordion 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading waves-effect">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" class="collapsed">
+                                        <i class="fa fa-angle-left control-icon"></i>具体内容
+                                    </a>
+                                </h4>
+                            </div>
+                            <img src="assets\images\pic1.jpg">
+                            <div id="collapse-2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>【南方人不懂系列：南方没有的丰收奇观，东北人把饺子铺在地上“晒”】12月19日，黑龙江五常，一家包饺子的店铺门口，地面摆了数千个饺子。店主说，东北室外气温低，饺子放地面上冻起来，方便保存。远远看去，就像饺子大丰收一样。南方网友：还有这种操作？北方网友：都坐下，普通操作</p></div>
+
+                                <p>【韩国一高层建筑突发大火 已致29人死26人伤】当地时间21日下午3点53分，韩国庆尚北道堤川市下所洞一栋8层建筑突发大火。消防部门表示，火灾已造成29人死亡，26人受伤。据报道，火灾据推测由地下停车场的车辆引起，最终蔓延至整栋建筑。该建筑内有一个健身中心、餐馆和公共桑拿室。该市位于首尔东南168公里。消防人员表示，16名被困在2楼公共桑拿室的人，均已死亡。此外，因大火跑到屋顶躲避的20人成功获救。据悉，共有约49辆消防车和卡车以及60名消防队员被派往现场救援，消防当局还出动了两架直升机。</p>
+
+                                <p>#先生资讯##张艺兴#冬专《Winter Special Gift》曝光主打歌《Goodbye Christmas（圣诞又至）》MV！这次是深情款款、缠绵抒情的张音乐人上线。就想问有多少人和我一样被雪中的独舞惊艳到？歌好听，舞绝世，鉴定完毕。疯狂打call！Goodbye Christmas（圣诞又至） #张艺兴圣诞又至#@努力努力再努力x</p>
+
+                                <p>网友爆料王思聪长春参加婚礼，据说份子礼随了30万，真是土豪的世界我们不懂。</p>
+
+
+                            </div>
+                        </div>
+                        <!-- End Accordion  -->
+
+                    </div>
+                    <!-- End Accordion section -->
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Start About Us Section 2 -->
+
+
+
+    <!-- Start Call to Action Section -->
+    <section class="call-to-action" id="analysis">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title0 text-center">
+                        <h2>热点分析</h2>
+                        <p>WEIBO HOTSPOT&COMMENT ANALYSIS</p>
+                    </div>                        
+                </div>
+            </div>
+            <br><br><div class="row">
+                 
+                <div class="col-md-12">
+                    <div class="testimonial-section">
+                        <div class="testimonial">
+                            <p>娱乐 ENTERTAINMENT <br><br><br>大多数出现在热点列表中的，<br>都是<strong>娱乐</strong>信息;<br><br>而娱乐信息中，<br>分为<u>娱乐圈事件</u>和<u>商业广告</u>。<br><br></p>
+                            
+                        </div>
+                        <div class="testimonial">
+                            <p>情感 LOVESTORY <br><br><br>情感话题的相关讨论，<br>一般出现在<strong>半夜</strong>;<br><br>多数都在<u>讲故事</u>，<br>很难说有什么舆情取向。<br><br></p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p>事件 EVENT <br><br><br>大家的关注事件取向多种多样，<br>家长里短无所不包；<br><br>但是如果牵扯<u>伦理事件</u>或者<u>社情现象</u>，<br>评价一般较为负面。<br><br></p>
+                        </div>
+                        <div class="testimonial">
+                            <p>娱乐 ENTERTAINMENT <br><br><br>关于娱乐圈的事件中，<br>会出现许多<strong>“粉丝控评”</strong>事件;<br><br>这让针对流量明星的舆情分析变得非常不准确，<br>因为大部分评论过的人都是经过组织的粉丝。<br><br></p>
+                        </div>
+                        <div class="testimonial">
+                            <p>大V CELEBRITIES <br><br><br>“大V”并不如大家所想的，<br>都具有非常高的影响力；<br><br>媒体类的“大V”更具影响力，<br>其他因为<u>传播意识和内容</u>无法引起关注。<br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call to Action Section -->
+    
+
+ 
+    
+    <!-- Start Portfolio Modal Section -->
+    <div class="section-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h2>Portfolio Details</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-md-6">
+                        <img src="assets/images/portfolio/port-1.jpg" class="img-responsive" alt="..">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/images/portfolio/port-2.jpg" class="img-responsive" alt="..">
+                    </div>
+                    
+                </div><!-- /.row -->
+            </div>                
+        </div>
+    </div>
+    <!-- End Portfolio Modal Section -->
+     
+    
+    <!-- Start Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <span class="copyright">Copyright &copy; 2017.本组 All rights reserved.</span>
+                </div>
+                
+                <div class="col-md-4 col-xs-12">
+                    <div class="footer-link">
+                        <ul class="pull-right">
+                            <li><a href="#home">TOP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+    
+    
+    
+    
+    
+    
+    <!-- jQuery Version 2.1.3 -->
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+
+    <!-- Materialize js -->
+    <script src="assets/js/material.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <!-- Google Map -->
+    <!---<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="assets/js/google-map-init.js"></script>--->
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+    
+    
+</body>
+</html>
